@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
 
-/* ===== Tokens ===== */
 :root {
   --gold: #d4a853;
   --gold-hover: #e6bd6a;
@@ -39,7 +38,6 @@ body {
   display: flex;
 }
 
-/* ===== Sidebar ===== */
 .sidebar {
   width: var(--sidebar-w);
   min-height: 100vh;
@@ -129,7 +127,6 @@ body {
   border-top: 1px solid var(--border);
 }
 
-/* ===== Main content ===== */
 .main-content {
   margin-left: var(--sidebar-w);
   flex: 1;
@@ -138,7 +135,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Topbar ===== */
 .topbar {
   height: 60px;
   background: var(--bg-section);
@@ -169,7 +165,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* ===== Page body ===== */
 .page-body {
   padding: 2rem;
   flex: 1;
@@ -195,7 +190,6 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== Cards ===== */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -213,7 +207,6 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-/* ===== Stat cards ===== */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -242,7 +235,6 @@ body {
   margin-top: 0.4rem;
 }
 
-/* ===== Table ===== */
 .table-wrap {
   overflow-x: auto;
 }
@@ -288,7 +280,6 @@ tbody td:first-child {
   font-weight: 500;
 }
 
-/* ===== Badges ===== */
 .badge {
   display: inline-block;
   padding: 3px 10px;
@@ -312,7 +303,6 @@ tbody td:first-child {
   color: var(--danger);
 }
 
-/* ===== Forms ===== */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -381,7 +371,6 @@ textarea:focus {
   grid-column: 1 / -1;
 }
 
-/* ===== Buttons ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -434,14 +423,12 @@ textarea:focus {
   font-size: 0.72rem;
 }
 
-/* ===== Action buttons in table ===== */
 .action-group {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-/* ===== Toast ===== */
 #toastHost {
   position: fixed;
   top: 1rem;
@@ -513,7 +500,6 @@ textarea:focus {
   }
 }
 
-/* ===== Empty state ===== */
 .empty-state {
   text-align: center;
   padding: 3rem 1rem;
@@ -521,7 +507,6 @@ textarea:focus {
   font: 400 0.9rem/1.6 'Open Sans', sans-serif;
 }
 
-/* ===== Hamburger (mobile) ===== */
 .sidebar-toggle {
   display: none;
   background: none;
@@ -531,7 +516,6 @@ textarea:focus {
   color: var(--text-primary);
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 900px) {
   .sidebar {
     transform: translateX(-100%);
