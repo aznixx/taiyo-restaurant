@@ -91,8 +91,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       border-bottom: 1px solid var(--border);
     }
 
-
-
     .login-form {
       display: flex;
       flex-direction: column;
@@ -140,9 +138,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     .register-footer a:hover {
       color: var(--gold-hover);
+    }
+  </style>
+</head>
 
-      .register-footer a:hover {
-        color: var(<div class="login-logo-sub" >Admin Panel</div> </div> <div class="login-card" > <h1 class="login-title" >Sign in</h1> <form class="login-form" action="login.php" method="POST" > <div class="login-error" ><?= htmlspecialchars($error) ?></div> <div class="form-field" > <label for="username" >Username</label> <input id="username" name="username" type="text" autocomplete="username" placeholder="Enter your username"
-            required /> </div> <div class="form-field" > <label for="password" >Password</label> <input id="password" name="password" type="password" autocomplete="current-password"
-            placeholder="Enter your password" required /> </div> <button type="submit" class="btn btn-primary login-submit" >Sign In</button> </form> </div> <div class="register-footer" > Don't have an account? <a href="register.php">Register</a>
- </div> </div> </body> </html>
+<body>
+  <div class="login-wrap">
+    <div class="login-logo">
+      <div class="login-logo-name">TAIYO</div>
+      <div class="login-logo-sub">Admin Panel</div>
+    </div>
+
+    <div class="login-card">
+      <h1 class="login-title">Sign in</h1>
+
+      <form class="login-form" action="login.php" method="POST">
+        <div class="login-error"><?= htmlspecialchars($error) ?></div>
+
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" autocomplete="username" placeholder="Enter your username"
+            required />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password"
+            placeholder="Enter your password" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary login-submit">Sign In</button>
+      </form>
+    </div>
+
+    <div class="register-footer">
+      Don't have an account? <a href="register.php">Register</a>
+    </div>
+  </div>
+</body>
+
+</html>
